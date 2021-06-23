@@ -538,7 +538,11 @@ input::placeholder {
         letter-spacing: .3px;
     }
 }
-
+.phil_cervice_conetnt{
+    width: 100%;
+    max-width: 1440px;
+    margin:auto;
+}
 .phil_service {
     width: 100%;
     background-color: #F7FAFD;
