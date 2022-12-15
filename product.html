@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>Phil菲爾資訊科技-產品開發</title>
+    <link rel="stylesheet" href="css/phil.css?v=20221130">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="phil_box">
+            <div class="phil_head">
+                <div class="phil_logo"><a href="index.html"><img src="img/phil/logo.svg" alt=""></a></div>
+                <div class="phil_menu"><a href="index.html">廣告行銷</a></div>
+                <div class="phil_menu" style="color: #32B2C3;">產品開發</div>
+                <div class="phil_menu"><a href="program.html">程式開發</a></div>
+                <div class="phil_menu"><a href="about.html">關於菲爾</a></div>
+            </div>
+        </div>
+        <div class="phil_banner product">
+            <div class="phil_product">
+                <div data-aos="fade-up">
+                    <lottie-player autoplay loop mode="normal" src="https://assets8.lottiefiles.com/packages/lf20_slipwrv0.json">
+                    </lottie-player>
+                </div>
+                <div class="phil_product_title" data-aos="fade-up" data-aos-delay="300">國際進口代理</div>
+                <div class="phil_product_subtitle" data-aos="fade-in" data-aos-delay="600">由我們為您，減少選擇的冤枉路</div>
+                <div class="phil_product_text" data-aos="fade-in" data-aos-delay="900">我們擁有多年國際選品及代理經驗，用精準的眼光搜尋世界各地最棒的產品，引進台灣，提供您更優質的商品與生活體驗。<br><br>讓您省下許多寶貴的時間及投資的冤枉錢，再也不必花錢當冤大頭，選擇了錯的產品不知如何脫手等等問題，讓我們成為您最強而有力的後盾，打造雙贏局面！</div>
+                <div class="phil_product_bt" data-aos="fade-in" data-aos-delay="900"><a class="program_bt" href="JaxWax.html">查看產品</a></div>
+            </div>
+            <div class="phil_product">
+                <div data-aos="fade-up">
+                    <lottie-player autoplay loop mode="normal" src="https://assets9.lottiefiles.com/packages/lf20_tyi61jpp.json">
+                    </lottie-player>
+                </div>
+                <div class="phil_product_title" data-aos="fade-up" data-aos-delay="300">自有品牌</div>
+                <div class="phil_product_subtitle" data-aos="fade-in" data-aos-delay="600">更加純粹、更加簡單</div>
+                <div class="phil_product_text" data-aos="fade-in" data-aos-delay="900">經百人團隊嚴選成分並反覆進行膚質與過敏測試，完善且標準的 SOP 造就全方位的綠色安全護膚新體驗，安全有保障。<br><br>
+
+希望讓不同領域奮鬥的我們都能保持自己最自然、舒服的狀態，也將持續提供更加豐富的產品與服務，成為消費者心目中選擇自然系護膚安心品牌的第一首選。</div>
+                <div class="phil_product_bt1" data-aos="fade-in" data-aos-delay="900"><span>Coming Soon</span></div>
+            </div>
+        </div>
+        </div>
+        <div class="phil_footer">
+            <div class="phil_footer_item">
+                <img src="img/phil/map.png" alt="">
+            </div>
+            <div class="phil_footer_flex-2">
+                <div class="phil_address">桃園市桃園區文中一路213巷13號3F</div>
+                <div class="phil_footer_item1">
+                    <div class="phil_contact_title">
+                        <ul>
+                            <li>電話</li>
+                            <li>mail</li>
+                            <li>營業時間</li>
+                            <li>.</li>
+                        </ul>
+                    </div>
+                    <div class="phil_contact">
+                        <ul>
+                            <li>03-4255461</li>
+                            <li>marketing@phil-technology.com.tw</li>
+                            <li>周一 - 周五 09:00~17:30</li>
+                            <li>周六 - 周日 休息</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <b:if cond='data:blog.isMobile'>
+        <b:else />
+        <div id='gotop'>
+            <center><i class="fa fa-angle-double-up" aria-hidden="true"></i></center>
+        </div>
+    </b:if>
+    <script type="text/javascript">
+    $(function() {
+        $("#gotop").click(function() {
+            jQuery("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('#gotop').fadeIn("fast");
+            } else {
+                $('#gotop').stop().fadeOut("fast");
+            }
+        });
+    });
+    </script>
+    <script src="js/aos.js"></script>
+    <script>
+    AOS.init({
+        offset: 100,
+        duration: 600,
+        easing: 'ease-in-out',
+        mobile: true,
+        live: true,
+        scrollContainer: null,
+    });
+    </script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    (function() {
+        // create SVG circle overlay and append it to the preview element
+        function createCircleOverlay(previewEl) {
+            var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            dummy.setAttributeNS(null, 'version', '1.1');
+            dummy.setAttributeNS(null, 'width', '100%');
+            dummy.setAttributeNS(null, 'height', '100%');
+            dummy.setAttributeNS(null, 'class', 'overlay');
+            var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttributeNS(null, 'cx', 0);
+            circle.setAttributeNS(null, 'cy', 0);
+            circle.setAttributeNS(null, 'r', Math.sqrt(Math.pow(previewEl.offsetWidth, 2) + Math.pow(previewEl.offsetHeight, 2)));
+            dummy.appendChild(g);
+            g.appendChild(circle);
+            previewEl.appendChild(dummy);
+        }
+
+        new GridFx(document.querySelector('.grid'), {
+            onInit: function(instance) {
+                createCircleOverlay(instance.previewEl);
+            },
+            onResize: function(instance) {
+                instance.previewEl.querySelector('svg circle').setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth, 2) + Math.pow(instance.previewEl.offsetHeight, 2)));
+            },
+            onOpenItem: function(instance, item) {
+                // item's image
+                var gridImg = item.querySelector('img'),
+                    gridImgOffset = gridImg.getBoundingClientRect(),
+                    win = { width: document.documentElement.clientWidth, height: window.innerHeight },
+                    SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
+                    SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
+
+                SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth, 2) + Math.pow(instance.previewEl.offsetHeight, 2)));
+                // set the transform for the SVG g node. This will animate the circle overlay. The origin of the circle depends on the position of the clicked item.
+                if (gridImgOffset.left + gridImg.offsetWidth / 2 < win.width / 2) {
+                    SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(' + win.width + ', ' + (gridImgOffset.top + gridImg.offsetHeight / 2 < win.height / 2 ? win.height : 0) + ')');
+                } else {
+                    SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(0, ' + (gridImgOffset.top + gridImg.offsetHeight / 2 < win.height / 2 ? win.height : 0) + ')');
+                }
+            }
+        });
+    })();
+    </script>
+</body>
+
+</html>
