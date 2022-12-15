@@ -715,6 +715,7 @@
 
     .JaxWax_partner_title {
         text-align: center;
+        width: 95%
     }
 }
 
@@ -775,5 +776,8 @@
     }
     .JaxWax_partner_content{
         padding-bottom:3rem ;
+    }
+    .JaxWax_partner_text ul li {
+        line-height: 3rem;
     }
 }
