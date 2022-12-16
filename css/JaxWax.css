@@ -255,7 +255,7 @@
 .JaxWax_item1 {
     position: relative;
     width: 280px;
-    height: 445px;
+    height: 400px;
     background: #F7FBF7;
     border-radius: 20px;
     filter: drop-shadow(2px 5px 10px rgba(55, 77, 49, 0.102));
@@ -315,7 +315,7 @@
 
     .JaxWax_item1 {
         width: 170px;
-        height: 320px;
+        height: 300px;
     }
 
     .JaxWax_item2 {
@@ -343,7 +343,7 @@
     text-align: left;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
