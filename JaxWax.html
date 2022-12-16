@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
     <title>Phil-產品開發 JAX WAX 來自澳洲頂級純天然的蠟品，即刻享受奢華美膚體驗</title>
-    <link rel="stylesheet" href="css/JaxWax.css?v=202221214">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/JaxWax.min.css?v=202221214">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <meta property="og:title" content="JAX WAX 來自澳洲頂級純天然的蠟品，即刻享受奢華美膚體驗">
     <meta property="og:description" content="知名品牌 JAX WAX Austraila終於來台，在擁有豐富天然資源的澳大利亞，皆使用最天然原料製作頂級蠟品，當優質頂級配方與生物技術雙雙結合，伴隨天然香氛及香澤等多重感官體驗，提供您極致舒適低溫除毛體驗。">
     <meta property="og:url" content="https://hansen1130.github.io/phil.github.io/JaxWax.html">
@@ -33,19 +34,19 @@
                             <div class="JaxWax_item1_img"><img src="img/JAX/product/product-strip3.webp" alt="軟蠟"></div>
                             <div class="JaxWax_item_title">軟蠟</div>
                             <div class="JaxWax_item_text">質地柔軟、富有彈性，溫和卓越地抓毛力。操作簡易，適用於手腿部位以及細軟毛髮。</div>
-                            <div class="JaxWax_item_bt"><a href="">了解更多</a></div>
+                            <div class="JaxWax_item_bt"><a href="JaxWax-StripWax.html">了解更多</a></div>
                         </div>
                         <div class="JaxWax_item1">
                             <div class="JaxWax_item1_img"><img src="img/JAX/product/product-hot2.webp" alt="硬蠟"></div>
                             <div class="JaxWax_item_title">硬蠟</div>
                             <div class="JaxWax_item_text">適合皮膚嬌嫩部位。純天然植物萃取，能有效降低除毛疼痛感，業界除毛師愛用蠟款。</div>
-                            <div class="JaxWax_item_bt"><a href="">了解更多</a></div>
+                            <div class="JaxWax_item_bt"><a href="JaxWax-HotWax.html">了解更多</a></div>
                         </div>
-                        <div class="JaxWax_item1 JaxWax_item2">
+                        <div class="JaxWax_item1 JaxWax_item2-1">
                             <div class="JaxWax_item1_img"><img src="img/JAX/product/product-post.webp" alt="肌膚保養"></div>
                             <div class="JaxWax_item_title">肌膚保養</div>
                             <div class="JaxWax_item_text">適用各種膚質能快速吸收且清爽不油膩，深度潤澤並舒緩肌膚不適，給肌膚零負擔感受。</div>
-                            <div class="JaxWax_item_bt"><a href="">了解更多</a></div>
+                            <div class="JaxWax_item_bt"><a href="JaxWax-WaxRange.html">了解更多</a></div>
                         </div>
                     </div>
                     <div class="JaxWax_principle">
@@ -121,7 +122,7 @@
                         <picture>
                             <source srcset="img/JAX/Jax-img2.webp" media="(min-width: 1300px)">
                             <source srcset="img/JAX/Jax-img2-mobile1.webp" media="(min-width: 431px)">
-                             <img src="img/JAX/Jax-img2-mobile.webp">
+                            <img src="img/JAX/Jax-img2-mobile.webp">
                         </picture>
                     </div>
                     <div class="JaxWax_partner_content">
@@ -150,6 +151,28 @@
             <div class="JaxWax_bg_img4"><img src="img/JAX/Jax-bg4.webp" alt=""></div>
         </div>
     </div>
+    <b:if cond='data:blog.isMobile'>
+        <b:else />
+        <div id='gotop'>
+            <center><i class="fa fa-angle-double-up" aria-hidden="true"></i></center>
+        </div>
+    </b:if>
+    <script type="text/javascript">
+    $(function() {
+        $("#gotop").click(function() {
+            jQuery("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('#gotop').fadeIn("fast");
+            } else {
+                $('#gotop').stop().fadeOut("fast");
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
