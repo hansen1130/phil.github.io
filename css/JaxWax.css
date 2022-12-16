@@ -35,24 +35,6 @@
     z-index: -99999;
 }
 
-@media (max-width: 1600px) {
-    .JaxWax_bg_img1 {
-        left: -70px;
-    }
-
-    .JaxWax_bg_img2 {
-        left: -220px;
-    }
-
-    .JaxWax_bg_img3 {
-        right: -120px;
-    }
-
-    .JaxWax_bg_img4 {
-        right: -70px;
-    }
-}
-
 .JaxWax_bg_img2 {
     position: fixed;
     left: -170px;
@@ -89,6 +71,21 @@
 
     .JaxWax_bg_img4 {
         right: -70px;
+    }
+}
+
+@media (max-height: 823px) {
+
+    .JaxWax_bg_img2 {
+        bottom: -80px;
+    }
+
+    .JaxWax_bg_img3 {
+        top: 0px;
+    }
+
+    .JaxWax_bg_img4 {
+        bottom: -20px;
     }
 }
 
